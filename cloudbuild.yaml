@@ -13,8 +13,8 @@ steps:
   args: ['exec', '-t', 'app', 'composer', 'install']
 
 - id: "Criando .env a partir do template"
- name: "gcr.io/cloud-builders/docker"
- args: ['exec', '-t', 'app', 'cp', '.env.example', '.env', '-f']
+  name: "gcr.io/cloud-builders/docker"
+  args: ['exec', '-t', 'app', 'cp', '.env.example', '.env', '-f']
 
 # - id: "Criando chave da aplicação - artisan key:generate"
 #   name: "gcr.io/cloud-builders/docker"
