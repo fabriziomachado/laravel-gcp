@@ -7,3 +7,7 @@ steps:
 - id: "Verificando serviços - docker ps"
   name: "gcr.io/cloud-builders/docker"
   args: ['ps']
+
+- id: "Instalando as dependencias - composer"
+  name: "gcr.io/cloud-builders/docker"
+  args: ['exec', '-t', 'app', 'composer', 'install']
