@@ -8,9 +8,9 @@ steps:
   name: "gcr.io/cloud-builders/docker"
   args: ['ps']
 
-# - id: "Instalando as dependencias - composer"
-#   name: "gcr.io/cloud-builders/docker"
-#   args: ['exec', '-t', 'app', 'composer', 'install']
+- id: "Instalando as dependencias - composer"
+  name: "gcr.io/cloud-builders/docker"
+  args: ['exec', '-t', 'app', 'composer', 'install']
 #
 # - id: "Criando .env a partir do template"
 #  name: "gcr.io/cloud-builders/docker"
